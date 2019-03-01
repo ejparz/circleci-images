@@ -1,1 +1,1 @@
-FROM circleci/python:3.7.2-stretch
+FROM circleci/golang:1.11-stretch
