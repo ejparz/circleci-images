@@ -7,4 +7,7 @@ ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 USER root
 RUN chmod -R 777 "$GOPATH"
+
 USER circleci
+
+CMD ["/bin/sh"]
