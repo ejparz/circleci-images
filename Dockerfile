@@ -1,8 +1,11 @@
 FROM circleci/golang:1.11-stretch
 FROM circleci/python:3.7.2-stretch
+
+#Create regular go directory
 COPY --from=0 /go /go
-COPY --from=0 /go/bin /go/bin
-COPY --from=0 /go/src /go/src
+
+#Copy go binaries
+COPY --from=0 /usr/local/go /usr/local/go
 
 ENV GOPATH /go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
