@@ -1,4 +1,4 @@
-FROM circleci/golang:1.11-stretch
+FROM circleci/golang:1.12-stretch
 FROM circleci/python:3.7.2-stretch-browsers
 
 #Create regular go directory
