@@ -1,5 +1,5 @@
-FROM circleci/golang:1.14-stretch
-FROM circleci/python:3.7.2-stretch-browsers
+FROM cimg/go:1.14
+FROM cimg/python:3.7-browsers
 
 #Create regular go directory
 COPY --from=0 /go /go
