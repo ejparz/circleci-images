@@ -2,12 +2,12 @@ FROM cimg/go:1.14
 FROM cimg/python:3.7-browsers
 
 #Create regular go directory
-COPY --from=0 /go /go
+COPY --from=0 /home/circleci/go /home/circleci/go
 
 #Copy go binaries
 COPY --from=0 /usr/local/go /usr/local/go
 
-ENV GOPATH /go
+ENV GOPATH /home/circleci/go
 ENV PATH $GOPATH/bin:/usr/local/go/bin:$PATH
 
 USER root
