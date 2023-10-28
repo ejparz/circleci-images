@@ -1,6 +1,7 @@
 FROM cimg/go:1.14
 FROM cimg/python:3.7-browsers
 
+
 #Create regular go directory
 COPY --from=0 /home/circleci/go /home/circleci/go
 
