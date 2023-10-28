@@ -12,7 +12,7 @@ ENV GOPATH /home/circleci/go
 ENV PYENV_ROOT=/home/circleci/.pyenv \ 
       PATH=$GOPATH/bin:/usr/local/go/bin:/home/circleci/.pyenv/shims:/home/circleci/.pyenv/bin:/home/circleci/.poetry/bin:$PATH
       
-RUN pyenv global 3.7.12
+RUN pyenv global 3.7.17
 
 RUN python --version && \
 	pip --version && \
